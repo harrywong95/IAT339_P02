@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P02 Style Guide</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Contrail One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="right">
+        <p id="login">Login/Signup &nbsp; &nbsp;
+        <img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></p>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <img alt="shoe 2" src="img/shoe2.png" width="60px" height="60px">
+      </div>
+
+      <nav class="block">
+        <a href="#" class="button-nav">MEN</a><a href="#" class="button-nav">WOMEN</a><a href="#" class="button-nav">BOYS</a><a href="#" class="button-nav">GIRLS</a>
+      </nav>
+      <div class="right">
+        <input type="text" name="search" placeholder="search">
+      </div>
+    </div>
+  </header>
+
+<!-- content area -->
+
+  <div class="container">
+    <div id="input-form">
+      <h2> Delivery Address </h2>
+      <form>
+        First name:<br>
+        <input type="text" name="firstname" placeholder="first name"><br>
+        Last name:<br>
+        <input type="text" name="lastname" placeholder="last name"><br>
+        Address:<br>
+        <input type="text" name="address" placeholder="address"><br>
+        City:<br>
+        <input type="text" name="city" placeholder="city"><br>
+        Province:<br>
+        <select id="province" name="province">
+          <option value="BC">BC</option>
+          <option value="AB">AB</option>
+          <option value="ON">ON</option>
+          <option value="MN">MN</option>
+          <option value="SK">SK</option>
+        </select>
+      </form>
+      <h2> Your Details </h2>
+      <form>
+        Day Phone:<br>
+        <input type="text" name="firstname" placeholder="day phone"><br>
+        E-mail:<br>
+        <input type="text" name="lastname" placeholder="e-mail"><br>
+      </form>
+      <h2> Delivery Options </h2>
+      <form>
+        <input type="radio" name="gender" value="male" checked> Free Shipping<br>
+        <input type="radio" name="gender" value="female"> Express Shipping<br>
+      </form>
+      <button type="button" class="button">CONFIRM</button>
+    </div>
+  </div>
+
+
+<!-- // end of content area -->
+
+  <footer>
+  	<div class="container">
+  		<div class="block2">
+  			<p><a class="hyperlink" href="#">Order Status</a></p>
+  			<p><a class="hyperlink" href="#">Returns</a></p>
+  			<p><a class="hyperlink" href="#">Contact</a></p>
+  		</div>
+
+  		<div class="block2">
+  			<p><a class="hyperlink" href="#">About</a></p>
+  			<p><a class="hyperlink" href="#">Careers</a></p>
+  		</div>
+  	</div>
+  </footer>
+
+</body>
+</html>
