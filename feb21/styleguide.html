@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P02 Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+  </head>
+
+  <body>
+
+    <h1 class="centered">STYLE GUIDE</h1>
+
+    <nav class="centered">
+      <p>
+        <a href="#interactive_elements">Interactive</a>
+        <a href="#text_elements">Typography</a>
+        <a href="#combined_elements">Combined</a>
+      </p>
+    </nav>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <!-- Default Button styling section -->
+      <section class="shaded">
+        <h2>NAVIGATION BUTTON</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav, .button-nav:hover, .button-nav:focus</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button-nav"&gt;MEN&lt;/a&gt;</code>
+
+        <a class="button-nav" href="#">MEN</a>
+      </section>
+
+      <section>
+        <h2>IN-TEXT LINK</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.hyperlink, .hyperlink:active, .hyperlink:hover, .hyperlink:focus</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="hyperlink"&gt;In-text link&lt;/a&gt;</code>
+
+        <p><a class="hyperlink" href="#">In-text link</a></p>
+      </section>
+
+      <section class="shaded">
+        <h2>BUTTONS</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button, .button:hover, .button:focus</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;button type="submit" class="button"&gt;Submit&lt;/button&gt;
+        &lt;button type="reset" class="button-reset"&gt;Reset&lt;/button&gt;</code>
+
+        <button type="button" class="button">ADD TO BAG</button>
+        <button type="button" class="button">CONFIRM</button>
+        <button type="submit" class="button">SUBMIT</button>
+        <button type="reset" class="button-reset">RESET</button>
+      </section>
+
+      <section>
+        <h2>TEXT INPUT FIELD</h2>
+
+        <h3>CSS selector:</h3>
+        <p>form, input[type=text], select</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;input type="text" name="firstname" placeholder="your first name" &gt;&lt;br&gt;&lt;selector id="size" name="size"&gt;&lt;option value ="7">7&lt;/option></code>
+
+        <div class="container">
+          <div id="input-form">
+            <form>
+              First name:<br>
+              <input type="text" name="firstname" placeholder="first name"><br>
+              Last name:<br>
+              <input type="text" name="lastname" placeholder="last name"><br>
+              Address:<br>
+              <input type="text" name="address" placeholder="address"><br>
+              Size:<br>
+              <select id="size" name="size">
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+              </select>
+            </form>
+        </div>
+        </div>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section class="shaded">
+        <h2>HEADINGS</h2>
+
+        <h3>CSS selector:</h3>
+        <p>h1, h2, h3</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h1&gt;Heading&lt;/h1&gt;<br>
+        &lt;h2&gt;Subheading 1&lt;/h2&gt;<br>
+        &lt;h3&gt;Subheading 2&lt;/h3&gt;</code>
+
+        <h1 class="head1">HEADING</h1>
+        <h2 class="head2">Subheading 1</h2>
+      	<h3 class="head3">SUBHEADING 2</h3>
+      </section>
+
+      <section>
+        <h2>PARAGRAPHS</h2>
+
+        <h3>CSS selector:</h3>
+        <p>p</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum, enim vel vehicula varius, sem arcu bibendum sem, ac fringilla felis arcu at justo. Nam quis eros ultricies, blandit sapien a, egestas ex. Maecenas in scelerisque justo.</p>        
+      </section>
+
+      <section class="shaded">
+        <h2>BULLETED LISTS</h2>
+
+        <h3>CSS selector:</h3>
+        <p>ul</p>
+
+        <h3>Sample code:</h3>
+        <code>
+        &lt;ul&gt;<br>
+        &lt;li&gt;Genuine leather&lt;li&gt;<br>
+        &lt;li&gt;Shank plate&lt;li&gt;<br>
+        &lt;li&gt;Rubber outsole&lt;li&gt;<br>
+        &lt;/ul&gt;
+        </code>
+    	<!-- <br> tag for line breaks https://www.w3schools.com/tags/tag_br.asp -->
+
+        <ul>
+          <li>Genuine leather</li>
+          <li>Shank plate</li>
+          <li>Rubber outsole</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>NUMBERED LISTS</h2>
+
+        <h3>CSS selector:</h3>
+        <p>ol</p>
+
+        <h3>Sample code:</h3>
+        <code>
+        &lt;ol&gt;<br>
+        &lt;li&gt;Genuine leather&lt;li&gt;<br>
+        &lt;li&gt;Shank plate&lt;li&gt;<br>
+        &lt;li&gt;Rubber outsole&lt;li&gt;<br>
+        &lt;/ol&gt;
+        </code>
+
+        <ol>
+          <li>Genuine leather</li>
+          <li>Shank plate</li>
+          <li>Rubber outsole</li>
+        </ol>
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section class="shaded">
+        <h2>MAIN NAVIGATION</h2>
+
+         <h3>CSS selector:</h3>
+        <p>nav, .button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;nav&gt;<br>
+          &lt;a href="#" class="button-nav"&gt;MEN&lt;/a&gt;<br>
+          &lt;a href="#" class="button-nav"&gt;WOMEN&lt;/a&gt;<br>
+          &lt;a href="#" class="button-nav"&gt;BOYS&lt;/a&gt;<br>
+          &lt;a href="#" class="button-nav"&gt;GIRLS&lt;/a&gt;<br>
+          &lt;/nav&gt;
+        </code>
+
+        <nav>
+          <a href="#" class="button-nav">MEN</a><a href="#" class="button-nav">WOMEN</a><a href="#" class="button-nav">BOYS</a><a href="#" class="button-nav">GIRLS</a>
+        </nav>
+      </section>
+
+      <section>
+        <h2>PRODUCT LISTING</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="container"&gt;<br>
+          &lt;div class="item"&gt;<br>
+          &lt;img src="img/shoe1.jpg" alt="shoe 1"&gt;<br>
+          &lt;p class="shoecaption"&gt;Sneaker Number One&lt;/p&gt;<br>
+          &lt;p&gt;$200&lt;/p&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code>
+
+        <div class="container">
+          <div class="item">
+            <img alt="shoe 1" src="img/shoe1.png">
+              <p class="shoecaption">Sneaker Number One</p>
+              <p>$200</p>
+          </div>
+          <div class="item">
+            <img alt="shoe 2" src="img/shoe2.png">
+              <p class="shoecaption">Sneaker Number Two</p>
+              <p>$150</p>
+          </div>
+          <div class="item">
+            <img alt="shoe 3" src="img/shoe3.png">
+              <p class="shoecaption">Sneaker Number Three</p>
+              <p>$90</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="shaded">
+        <h2>GRID STRUCTURE</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.container, .block</p>
+
+        <h3>Sample code:</h3>
+        <code>    
+            &lt;div class="container"&gt;<br>
+            &lt;div class="block col1"&gt;COLUMN 1&lt;/div&gt;<br>
+            &lt;div class="block col2"&gt;COLUMN 2&lt;/div&gt;<br>
+            &lt;div class="block col3"&gt;COLUMN 3&lt;/div&gt;<br>
+            &lt;div class="block col4"&gt;COLUMN 4&lt;/div&gt;<br>
+            &lt;/div&gt;
+        </code>
+
+        <div class="container">
+          <div class="block col1"><p class="grid-name">COLUMN 1</p></div>
+          <div class="block col2"><p class="grid-name">COLUMN 2</p></div>
+        </div>
+        <div class="container">
+          <div class="block col1"><p class="grid-name">COLUMN 1</p></div>
+          <div class="block col2"><p class="grid-name">COLUMN 2</p></div>
+          <div class="block col3"><p class="grid-name">COLUMN 3</p></div>
+       </div>
+       <div class="container">
+         <div class="block col1"><p class="grid-name">COLUMN 1</p></div>
+         <div class="block col2"><p class="grid-name">COLUMN 2</p></div>
+         <div class="block col3"><p class="grid-name">COLUMN 3</p></div>
+         <div class="block col4"><p class="grid-name">COLUMN 4</p></div>
+       </div>
+        <!-- grid code from lab3 -->
+      </section>
+
+      <section>
+
+        <h2>COLOUR PALETTE</h2>
+
+        <h3>CSS selector:</h3>
+        <p></p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;div class="blue"&gt;#003c75&lt;/div&gt;</code>
+
+        <div class="container">
+          <div class="block color1">
+            <p class="colour-name">
+              #E1E8E7
+            </p>
+          </div>
+          <div class="block color2">
+            <p class="colour-name">
+              #BDD0CB
+            </p>
+          </div>
+          <div class="block color3">
+            <p class="colour-name">
+              #89A3A0
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="block color4">
+            <p class="colour-name">
+              #5B7777
+            </p>
+          </div>
+          <div class="block color5">
+            <p class="colour-name">
+              #44565B
+            </p>
+          </div>
+          <div class="block color6">
+            <p class="colour-name">
+              #D1D1D1
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+  </body>
+</html>
