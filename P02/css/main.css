@@ -54,7 +54,7 @@ section .shaded {
   text-align: center;
 }
 
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -128,7 +128,7 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 h1 {
@@ -185,7 +185,7 @@ ol {
 }
 
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 /*colour swatches*/

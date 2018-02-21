@@ -1,0 +1,215 @@
+body {
+  font-family: Lato, sans-serif;
+  margin: 1%;
+  padding: 1%;
+}
+
+p {
+  font-family: Barlow, Helvetica;
+  color: #606060;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+code {
+  display: block;
+  margin-bottom: 1em;
+}
+
+section h3 {
+  margin-bottom: 0.25em;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #DDD;
+  padding: 1em 1.5em;
+}
+
+section:not([id]) {
+  padding: 2rem;
+}
+
+section .shaded {
+  background-color: #f2f2f2;
+}
+
+.centered {
+  text-align: center;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0;
+  background-color: white;
+  text-decoration: none;
+  font-family: Contrail One;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: black;
+  color: white;
+}
+
+/*Submit button*/
+.button {
+  background: #44565B;
+  border: none;
+  padding: 1em 2em;
+  color: white;
+  border-radius: .25em;
+  margin: 1em;
+  font-family: Contrail One;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button:hover, .button:focus {
+  background-color: #E1E8E7;
+  color: #44565B;
+}
+
+/*Reset button*/
+.button-reset {
+  background: #CCC;
+  border: none;
+  padding: 1em 2em;
+  color: black;
+  border-radius: .25em;
+  margin: 1em;
+  font-family: Contrail One;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-reset:hover, .button-reset:focus {
+  color: white;
+  background-color: #555;
+}
+
+/*text input box*/
+
+form {
+  padding: 1em;
+}
+
+#input-form {
+  background-color: #f2f2f2;
+  width: 50%;
+  min-width: 12em;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 0.8em 1.2em;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.8em;
+  font-weight: normal;
+  /*Learned from https://www.w3schools.com/cssref/pr_text_letter-spacing.asp*/
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+.head1 {
+  font-size: 2em;
+  color: #44565B;
+  font-family: Contrail One;
+  letter-spacing: normal;
+  margin-bottom: 0.6em;
+}
+
+.head2 {
+  font-size: 1.5em;
+  color: #44565B;
+  font-family: Contrail One;
+  letter-spacing: normal;
+}
+
+.head3 {
+  font-size: 1.1em;
+  color: #44565B;
+  font-family: Contrail One;
+  letter-spacing: normal;
+}
+
+ul {
+  list-style-type: circle;
+  font-family: Barlow, Helvetica;
+  color: #44565B;
+  /*list-style type from https://www.w3schools.com/css/css_list.asp*/
+}
+
+ol {
+  font-family: Barlow, Helvetica;
+  color: #44565B;
+}
+
+.item img {
+  min-width: 12em;
+  width: 50%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #D1D1D1;
+  margin-bottom: 1em;
+  margin-right: 1em;
+
+}
+
+.colour-name{
+  color: black;
+  margin-top: 1em;
+  font-family: Contrail One;
+}
+
+.grid-name{
+  color: white;
+  margin-top: 1em;
+  font-family: Contrail One;
+}
+
+.shoecaption{
+  font-size: 1.25em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  font-weight: bold;
+  font-family: Barlow, Helvetica;
+}
