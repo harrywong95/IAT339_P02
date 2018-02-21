@@ -5,7 +5,14 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    /*margin-bottom: 1em;*/
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-left: 20%;
+    margin-bottom: 2em;
 }
 
 .left{
@@ -16,39 +23,18 @@
 
 .block {
     flex-grow: 1;
-    flex-basis: 15em;
-    text-align: center;
+    flex-basis: 10em;
+}
+
+.block .button {
+    width: 100%;
 }
 
 .block2 {
     flex-grow: 1;
-    flex-basis: 8em;
-    text-align: center;
+    flex-basis: 15em;
+    padding: 1em;
 }
-
-.block3 {
-    flex-grow: 1;
-    flex-basis: 8em;
-}
-
-.block4 {
-    flex-grow: 1;
-    flex-basis: 8em;
-    max-width: 60.5em;
-}
-
-.block5{
-  flex-grow: 1;
-  flex-basis: 8em;
-  max-width: 60.5em;
-}
-
-.block6{
-  flex-grow: 1;
-  flex-basis: 8em;
-  max-width: 35em;
-}
-
 
 .right {
     flex-grow: 1;
@@ -57,16 +43,24 @@
     /*padding: 1em;*/
 }
 
-.right p {
-    margin-bottom: 0;
-    margin-top: 0;
-}
 
 .item {
-    flex-grow: .1;
+    flex-grow: 1;
     flex-basis: 5em;
-    padding-bottom: 5em;
 }
+
+.navblock {
+    flex-grow: 1;
+    flex-basis: 15em;
+    text-align: center;
+}
+
+.footerblock {
+    flex-grow: 1;
+    flex-basis: 8em;
+    text-align: center;
+}
+
 
 @media (max-width: 60em) {
     footer .container {
@@ -81,10 +75,14 @@
         /*background-color: black;*/
         /*background color for testing media query*/
     }
-    .right {
+    .right input {
         text-align: center;
     }
     input[type=text], select {
+        width: 100%;
+    }
+
+    .button, .button-reset {
         width: 100%;
     }
 }
@@ -94,4 +92,19 @@
         flex-basis: 15em;
         /*background-color: green;*/
     }
+
+    .content {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    .textimage p {
+        display: none;
+    }
+
+    .left {
+        text-align: center;
+    }
+    
 }
+

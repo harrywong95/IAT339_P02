@@ -4,32 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Product</title>
+  <title>Shoe Info</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Contrail One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 </head>
 
 <body>
+
   <header>
     <div class="container">
       <div class="right">
-        <p id="login">Login/Signup &nbsp; &nbsp;
-        <img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></p>
-      </div>
-
+        <p id="login">
+        	<a href="index.html">Login/Signup</a> &nbsp; &nbsp;
+        	<a href="cart.html"><img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></a>
+    	</p>
+      </div>    
     </div>
 
     <div class="container">
       <div class="left">
-        <img alt="shoe 2" src="img/shoe2.png" width="60px" height="60px">
+        <a href="index.html"><img alt="shoe 2" src="img/shoe2.png" width="60px" height="60px"></a>
       </div>
 
-      <nav class="block">
-        <a href="#" class="button-nav">MEN</a><a href="#" class="button-nav">WOMEN</a><a href="#" class="button-nav">BOYS</a><a href="#" class="button-nav">GIRLS</a>
+      <nav class="navblock">
+        <a href="listing.html" class="button-nav">MEN</a><a href="listing.html" class="button-nav">WOMEN</a><a href="listing.html" class="button-nav">BOYS</a><a href="listing.html" class="button-nav">GIRLS</a>
       </nav>
       <div class="right">
         <input type="text" name="search" placeholder="search">
@@ -38,21 +40,24 @@
   </header>
 
 <!-- content area -->
-  <div class="container">
-    <div class="item">
-    </div>
-    <div class="block4">
+
+ <div class="content">
+    <div class="block fullimg">
       <img alt="shoe 1" src="img/placeholder.jpg">
     </div>
-    <div class="block5">
-      <h2> The Name of the Shoe </h2>
-      <h3> $180 </h3>
-      <div class="block6">
-        <img alt="shoe 1" src="img/placeholder.jpg">
-        <img alt="shoe 1" src="img/placeholder.jpg">
-        <img alt="shoe 1" src="img/placeholder.jpg">
-        <img alt="shoe 1" src="img/placeholder.jpg">
+
+    <div class="block2">
+      <h2>The Name of the Shoe</h2>
+      <h3>$180</h3>
+      <div class="container">
+        <div class="thumbnail">
+          <img alt="shoe 1" src="img/placeholder.jpg">
+          <img alt="shoe 1" src="img/placeholder.jpg">
+          <img alt="shoe 1" src="img/placeholder.jpg">
+          <img alt="shoe 1" src="img/placeholder.jpg">
+        </div>
       </div>
+
       <select>
         <option value="Select Size">Select Size</option>
         <option value="8">8</option>
@@ -68,32 +73,28 @@
         <option value="10">4</option>
         <option value="11">5</option>
         <option value="12">6</option>
-      </select>
-      <br><button type="button" class="button"><a href="cart.html">ADD TO BAG</a></button>
+      </select><br>
+      <a href="cart.html"><button type="button" class="button">ADD TO BAG</button></a>
     </div>
-  </div>
-  <div class="container">
-    <div class="item">
-    </div>
-    <div class="item">
-    </div>
-    <div class="block6">
-        <p class="shoecaption">Progressive, premium, pioneering. NMD blends pure adidas heritage with advanced, modern materials to create a futuristic look that resonates on the streets. These shoes feature a lightweight knit upper with premium leather overlays and welded trim. Boost cushioning gives all-day comfort and responsiveness.</p>
-    </div>
-  </div>
 
+    <div class="container">
+      <p>Progressive, premium, pioneering. NMD blends pure adidas heritage with advanced, modern materials to create a futuristic look that resonates on the streets. These shoes feature a lightweight knit upper with premium leather overlays and welded trim. Boost cushioning gives all-day comfort and responsiveness.</p>
+      <!-- description from adidas site -->
+    </div>
+  </div>
+    
 
 <!-- // end of content area -->
 
   <footer>
   	<div class="container">
-  		<div class="block2">
+  		<div class="footerblock">
   			<p><a class="hyperlink" href="#">Order Status</a></p>
   			<p><a class="hyperlink" href="#">Returns</a></p>
   			<p><a class="hyperlink" href="#">Contact</a></p>
   		</div>
 
-  		<div class="block2">
+  		<div class="footerblock">
   			<p><a class="hyperlink" href="#">About</a></p>
   			<p><a class="hyperlink" href="#">Careers</a></p>
   		</div>

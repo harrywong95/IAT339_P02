@@ -4,32 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Homepage</title>
+  <title>Home</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Contrail One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 </head>
 
 <body>
+
   <header>
     <div class="container">
       <div class="right">
-        <p id="login">Login/Signup &nbsp; &nbsp;
-        <img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></p>
-      </div>
-
+        <p id="login">
+        	<a href="index.html">Login/Signup</a> &nbsp; &nbsp;
+        	<a href="cart.html"><img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></a>
+    	</p>
+      </div>    
     </div>
 
     <div class="container">
       <div class="left">
-        <img alt="shoe 2" src="img/shoe2.png" width="60px" height="60px">
+        <a href="index.html"><img alt="shoe 2" src="img/shoe2.png" width="60px" height="60px"></a>
       </div>
 
-      <nav class="block">
-        <a href="#" class="button-nav">MEN</a><a href="#" class="button-nav">WOMEN</a><a href="#" class="button-nav">BOYS</a><a href="#" class="button-nav">GIRLS</a>
+      <nav class="navblock">
+        <a href="listing.html" class="button-nav">MEN</a><a href="listing.html" class="button-nav">WOMEN</a><a href="listing.html" class="button-nav">BOYS</a><a href="listing.html" class="button-nav">GIRLS</a>
       </nav>
       <div class="right">
         <input type="text" name="search" placeholder="search">
@@ -39,26 +41,28 @@
 
 <!-- content area -->
 
-<div class="container">
-  <div class="homepageimage">
-    <img alt="homepageimage" src="img/homepage2.jpg">
-    <div class="textimage"><h1>Bikini Bottom</h1></div>
-    <div class="textimage"><p>Introducing the 2018 white shoes.<br>Access to everything here from materials to influences.<p></div>
+<div class="container homeimage">
+  <img alt="homepage image" src="img/homepage2.jpg">
+  <div class="block textimage">
+    <h1>Bikini Bottom</h1>
   </div>
+  <div class="block textimage">
+    <p>Introducing the 2018 white shoes.<br>Access to everything here from materials to influences.<p>
+    </div>
 </div>
-
 
 <!-- // end of content area -->
 
   <footer>
   	<div class="container">
-  		<div class="block2">
+
+  		<div class="footerblock">
   			<p><a class="hyperlink" href="#">Order Status</a></p>
   			<p><a class="hyperlink" href="#">Returns</a></p>
   			<p><a class="hyperlink" href="#">Contact</a></p>
   		</div>
 
-  		<div class="block2">
+  		<div class="footerblock">
   			<p><a class="hyperlink" href="#">About</a></p>
   			<p><a class="hyperlink" href="#">Careers</a></p>
   		</div>
@@ -66,4 +70,5 @@
   </footer>
 
 </body>
+
 </html>

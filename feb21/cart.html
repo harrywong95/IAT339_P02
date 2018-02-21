@@ -1,35 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cart</title>
+  <title>Your Cart</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Contrail One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 </head>
 
 <body>
-  <header>
+
+ <header>
     <div class="container">
       <div class="right">
-        <p id="login">Login/Signup &nbsp; &nbsp;
-        <img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></p>
-      </div>
-
+        <p id="login">
+          <a href="index.html">Login/Signup</a> &nbsp; &nbsp;
+          <a href="cart.html"><img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></a>
+      </p>
+      </div>    
     </div>
 
     <div class="container">
       <div class="left">
-        <img alt="shoe 2" src="img/shoe2.png" width="60px" height="60px">
+        <a href="index.html"><img alt="shoe 2" src="img/shoe2.png" width="60px" height="60px"></a>
       </div>
 
-      <nav class="block">
-        <a href="#" class="button-nav">MEN</a><a href="#" class="button-nav">WOMEN</a><a href="#" class="button-nav">BOYS</a><a href="#" class="button-nav">GIRLS</a>
+      <nav class="navblock">
+        <a href="listing.html" class="button-nav">MEN</a><a href="listing.html" class="button-nav">WOMEN</a><a href="listing.html" class="button-nav">BOYS</a><a href="listing.html" class="button-nav">GIRLS</a>
       </nav>
       <div class="right">
         <input type="text" name="search" placeholder="search">
@@ -38,41 +41,63 @@
   </header>
 
 <!-- content area -->
-<div class="container">
-  <div>
-    <h2>Your Cart</h2>
-    <p>There are no items in your cart.<br>
-If you have an account with us, please log in to see items you previously added.</p>
-  </div>
-  <div class="summary">
-    <h2>Summary</h2>
-    <div>
-      <p>SUBTOTAL</p>
-      <p>ESTIMATED DELIVERY & HANDLING</p>
-      <h4>TOTAL</h4>
+  <div class="content">
+
+    <div class="block2">
+      <h2>Your Cart</h2>
+      <p><strong>There are no items in your cart.</strong><br>
+  If you have an account, please log in to view items you previously added.</p>
     </div>
-    <div>
-      <p>CAD 0.00</p>
-      <p>CAD 0.00</p>
-      <p>CAD 0.00</p>
+
+<!-- summary column -->
+    <div class="item shaded">
+      <h2>Summary</h2>
+      <div class="container">
+        <div class="item">
+          <p>SUBTOTAL</p>
+        </div>
+        <div class="right">
+          <p>CAD 0.00</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="item">
+           <p>SHIPPING & HANDLING</p>
+        </div>
+        <div class="right">
+          <p>CAD 0.00</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="item">
+           <h4>TOTAL</h4>
+        </div>
+        <div class="right">
+          <p>CAD 0.00</p>
+        </div>
+      </div>
+      <div class="block">
+        <a href="checkout.html">
+          <button type="button" class="button">CHECKOUT</button>
+        </a>
+      </div>
     </div>
-    <button type="button" class="button"><a href="checkout.html">CHECKOUT</a></button>
+    <!-- //summary column -->
+
   </div>
-</div>
-
-
-
 <!-- // end of content area -->
 
   <footer>
   	<div class="container">
-  		<div class="block2">
+  		<div class="footerblock">
   			<p><a class="hyperlink" href="#">Order Status</a></p>
   			<p><a class="hyperlink" href="#">Returns</a></p>
   			<p><a class="hyperlink" href="#">Contact</a></p>
   		</div>
 
-  		<div class="block2">
+  		<div class="footerblock">
   			<p><a class="hyperlink" href="#">About</a></p>
   			<p><a class="hyperlink" href="#">Careers</a></p>
   		</div>

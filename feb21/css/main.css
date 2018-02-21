@@ -5,8 +5,8 @@ body {
 }
 
 header {
-  margin: 1%;
-  padding: 1%;
+  margin: 0 1%;
+  padding: 0 1%;
 }
 
 p {
@@ -51,6 +51,12 @@ section:not([id]) {
   padding: 2rem;
 }
 
+
+.shaded {
+  padding: 1em;
+  background-color: #f2f2f2;
+}
+
 section .shaded {
   background-color: #f2f2f2;
 }
@@ -73,7 +79,12 @@ footer .container {
   padding-left: 30%;
 }
 
-/*
+
+
+
+
+
+/* 
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -96,10 +107,10 @@ footer .container {
 .button {
   background: #44565B;
   border: none;
-  padding: 1em 2em;
+  padding: 1em 5em;
   color: white;
   border-radius: .25em;
-  margin: 1em;
+  margin-top: 2em;
   font-family: Contrail One;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
@@ -114,10 +125,10 @@ footer .container {
 .button-reset {
   background: #CCC;
   border: none;
-  padding: 1em 2em;
+  padding: 1em 5em;
   color: black;
+  margin-top: 1em;
   border-radius: .25em;
-  margin: 1em;
   font-family: Contrail One;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
@@ -130,41 +141,32 @@ footer .container {
 
 /*text input box*/
 
-form {
-  padding: 1em;
+
+form input {
+  width: 100%
 }
 
 #input-form {
-  background-color: white;
-  width: 50%;
-  min-width: 20em;
-}
-
-#input-form h2{
-  border-bottom: 1px solid #D1D1D1;
-  padding-bottom: 1em;
-}
-
-#input-form button{
-  float:right;
-  padding: 1em 8em;
+  background-color: #f2f2f2;
+  width: 100%;
+  min-width: 12em;
+  padding: 1em;
 }
 
 input[type=text], select {
-    width: 40%;
     padding: 0.8em 1.2em;
     margin: 0.5em 0;
     box-sizing: border-box;
 }
 
-input[type=texting], select {
-    width: 100%;
-    padding: 0.8em 1.2em;
-    margin: 0.5em 0;
-    box-sizing: border-box;
-}
 
-/*
+
+
+
+
+
+
+/* 
   TEXT ELEMENTS -------------------
 */
 h1 {
@@ -185,27 +187,6 @@ h3 {
   font-size: 1.1em;
   font-weight: normal;
 }
-
-.textimage h1{
-    position: absolute;
-    letter-spacing: 0.5em;
-    top: 12em;
-    left: 4em;
-    color: white;
-}
-
-.textimage p{
-  position: absolute;
-  top: 29em;
-  left: 8em;
-  color: white;
-  text-align: center;
-}
-
-.homepageimage img{
-  width: 100%;
-}
-
 
 .head1 {
   font-size: 2em;
@@ -241,8 +222,30 @@ ol {
   color: #44565B;
 }
 
+.homeimage img{
+  width: 100%;
+}
 
-/*
+.textimage h1{
+    position: absolute;
+    letter-spacing: 0.5em;
+    top: 35%;
+    left: 8%;
+    color: white;
+}
+
+.textimage p{
+  position: absolute;
+  top: 42%;
+  left: 8%;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+/* 
   COMBINED ELEMENTS -------------------
 */
 /*colour swatches*/
@@ -292,29 +295,23 @@ ol {
   background-color: #8c8c8c;
 }
 
-.block4 img{
-  width: 60em;
-  height: 40em;
-  padding: .1em;
-}
-
-.block6 img{
-  width: 7.5em;
-  height: 7.5em;
-}
-
 .item img {
   min-width: 12em;
   width: 50%;
   padding-bottom: 1em;
   border-bottom: 1px solid #D1D1D1;
-  margin-bottom: 0em;
+
+  margin-bottom: 1em;
   margin-right: 1em;
 }
 
-.item p{
-  font-size: .8em;
-  margin: 0;
+.fullimg img {
+  width: 100%;
+  /*height: 75%;*/
+}
+
+.thumbnail img {
+  width: 20%;
 }
 
 .colour-name{
@@ -330,8 +327,10 @@ ol {
 }
 
 .shoecaption{
-  font-size: .8em;
-  margin: 0;
+  font-size: 1.25em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+
   font-weight: bold;
   font-family: Barlow, Helvetica;
 }
@@ -340,4 +339,5 @@ ol {
   font-family: Barlow, Helvetica;
   color: #606060;
   font-size: 0.8em;
+
 }
