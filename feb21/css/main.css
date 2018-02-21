@@ -151,6 +151,13 @@ form {
 }
 
 input[type=text], select {
+    width: 40%;
+    padding: 0.8em 1.2em;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+}
+
+input[type=texting], select {
     width: 100%;
     padding: 0.8em 1.2em;
     margin: 0.5em 0;
@@ -177,6 +184,26 @@ h2 {
 h3 {
   font-size: 1.1em;
   font-weight: normal;
+}
+
+.textimage h1{
+    position: absolute;
+    letter-spacing: 0.5em;
+    top: 12em;
+    left: 4em;
+    color: white;
+}
+
+.textimage p{
+  position: absolute;
+  top: 29em;
+  left: 8em;
+  color: white;
+  text-align: center;
+}
+
+.homepageimage img{
+  width: 100%;
 }
 
 
