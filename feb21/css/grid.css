@@ -26,6 +26,29 @@
     text-align: center;
 }
 
+.block3 {
+    flex-grow: 1;
+    flex-basis: 8em;
+}
+
+.block4 {
+    flex-grow: 1;
+    flex-basis: 8em;
+    max-width: 60.5em;
+}
+
+.block5{
+  flex-grow: 1;
+  flex-basis: 8em;
+  max-width: 60.5em;
+}
+
+.block6{
+  flex-grow: 1;
+  flex-basis: 8em;
+  max-width: 35em;
+}
+
 
 .right {
     flex-grow: 1;
@@ -40,8 +63,9 @@
 }
 
 .item {
-    flex-grow: 1;
+    flex-grow: .1;
     flex-basis: 5em;
+    padding-bottom: 5em;
 }
 
 @media (max-width: 60em) {
@@ -71,8 +95,3 @@
         /*background-color: green;*/
     }
 }
-
-
-
-
-
