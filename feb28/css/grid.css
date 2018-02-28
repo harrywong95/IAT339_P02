@@ -13,6 +13,8 @@
     width: 80%;
     padding-left: 20%;
     margin-bottom: 2em;
+    padding-top: 2em;
+    flex: 1;
 }
 
 .left{
@@ -26,7 +28,7 @@
     flex-basis: 10em;
 }
 
-.block .button {
+.block .cart {
     width: 100%;
 }
 
@@ -36,17 +38,23 @@
     padding: 1em;
 }
 
+.block3 {
+    flex-grow: 3;
+    flex-basis: 20em;
+    padding: 1em;
+}
+
 .right {
     flex-grow: 1;
     flex-basis: 10em;
     text-align: right;
-    /*padding: 1em;*/
 }
 
 
 .item {
     flex-grow: 1;
     flex-basis: 5em;
+    margin-right: 1em;
 }
 
 .navblock {
@@ -58,39 +66,113 @@
 .footerblock {
     flex-grow: 1;
     flex-basis: 8em;
-    text-align: center;
+    text-align: left;
 }
 
+
+@media (max-width: 100em) {
+    .textimage p{
+        top: 33vw;
+    }
+}
+
+@media (max-width: 80em) {
+    .textimage p{
+        top: 40vw;
+    }
+
+    #head2, #head3 {
+        top: 24em;
+    }
+/*percentage of viewport width to scale text with window
+https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container*/
+}
 
 @media (max-width: 60em) {
     footer .container {
         width: 80%;
         padding-left: 20%;
     }
+
+    .textimage p{
+        top: 46vw;
+    }
+
+    #head2, #head3 {
+        top: 28em;
+    }
 }
 
 @media (max-width: 40em) {
     .block {
         flex-basis: 30em;
-        /*background-color: black;*/
-        /*background color for testing media query*/
     }
     .right input {
         text-align: center;
+        margin-top: 0;
+        margin-bottom: 2em;
     }
+
+    .right .fa-search {
+        display: none;
+    }
+
     input[type=text], select {
         width: 100%;
     }
 
-    .button, .button-reset {
+    .checkout {
         width: 100%;
+    }
+
+    .textimage h1{
+        top: 18rem;
+        font-size: 2em;
+    }
+
+    .textimage p {
+        top: 50vw;
+        left: 60%;
+    }
+
+    .textimage .button {
+        display: inline;
+    }
+    .textimage .button {
+        margin-top: 0.5em;
+        width: 60%;
+        padding: 1em;
+    }
+
+    #home-img1 {
+        width: 100%;
+    }
+
+    #home-img2 {
+        width: 100%;
+    }
+
+    #head2 {
+        top: 17em;
+        font-size: 2em;
+    }
+
+    #head3 {
+        top: 30em;
+        left: 8%;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 35em) {
+    .textimage p {
+        display: none;
     }
 }
 
 @media (max-width: 30em) {
     .block {
         flex-basis: 15em;
-        /*background-color: green;*/
     }
 
     .content {
@@ -98,12 +180,29 @@
         padding-left: 10%;
     }
 
-    .textimage p {
-        display: none;
-    }
-
-    .left {
+    .left, .footerblock, .right {
         text-align: center;
     }
 
+    #login {
+        text-align: center;
+    }
+    
+    .item img {
+        width: 100%;
+    }
+
+    .textimage h1{
+        top: 22rem;
+    }
+
+    #head3 {
+        top: 29em;
+    }
+}
+
+@media (max-width: 25em) {
+    #head3 {
+        top: 24em;
+    }
 }

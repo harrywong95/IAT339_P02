@@ -1,19 +1,28 @@
 body {
   font-family: Lato, sans-serif;
   margin: 0;
-  /*padding: 1%;*/
+}
+
+.flexheight {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 header {
-  margin: 0 1%;
-  padding: 0 1%;
+  padding: 0 2%;
+  border-bottom: #EEEEEE solid 1px;
 }
 
 p {
   font-family: Barlow, Helvetica;
   color: #606060;
+  font-size: 0.8em;
 }
 
+
+
+/*links ------------------------------*/
 a {
   text-decoration: none;
   color: black;
@@ -28,6 +37,9 @@ nav a {
   padding: 1em;
   font-size: 1.1em;
 }
+
+
+
 
 code {
   display: block;
@@ -52,6 +64,7 @@ section:not([id]) {
 }
 
 
+
 .shaded {
   padding: 1em;
   background-color: #f2f2f2;
@@ -66,7 +79,8 @@ section .shaded {
 }
 
 footer {
-  padding: 2em;
+  padding-top: 2em;
+  padding-bottom: 1em;
   background-color: #1a1a1a;
 }
 
@@ -75,24 +89,34 @@ footer a {
 }
 
 footer .container {
-  width: 70%;
-  padding-left: 30%;
+  width: 80%;
+  padding-left: 20%;
+}
+
+footer .content {
+  margin-bottom: 0;
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #606060;
+}
+
+footer .content a {
+  color: #606060;
+  font-size: 0.8em;
+}
+
+footer .content a:hover {
+  color: white;
 }
 
 
 
-
-
-
-/*
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the navigation button */
+/* Styling for the navigation/buttons -------------*/
 .button-nav {
   display: inline-block;
   padding: 1em 2em;
   margin: 0;
+  margin-top: 0.9em;
   background-color: white;
   text-decoration: none;
   font-family: Contrail One;
@@ -107,7 +131,7 @@ footer .container {
 .button {
   background: #44565B;
   border: none;
-  padding: 1em 5em;
+  padding: 1em;
   color: white;
   border-radius: .25em;
   margin-top: 2em;
@@ -139,9 +163,11 @@ footer .container {
   background-color: #555;
 }
 
-/*text input box*/
+.checkout {
+  padding: 1em 5em;
+}
 
-
+/*text input box--------------------------------------*/
 form input {
   width: 100%
 }
@@ -159,7 +185,9 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-
+.right input {
+  margin-top: 1.5em;
+}
 
 
 
@@ -167,7 +195,7 @@ input[type=text], select {
 
 
 /*
-  TEXT ELEMENTS -------------------
+  TEXT ELEMENTS ---------------------------------
 */
 h1 {
   font-size: 2em;
@@ -186,6 +214,10 @@ h2 {
 h3 {
   font-size: 1.1em;
   font-weight: normal;
+}
+
+h4 {
+  margin-top: 0.9em;
 }
 
 .head1 {
@@ -227,29 +259,50 @@ ol {
   height: 100%;
 }
 
+
 .textimage h1{
     position: absolute;
-    letter-spacing: 0.5em;
-    top: 35%;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+    top: 15rem;
     left: 8%;
     color: white;
+    font-family: Passion One, Helvetica;
+    font-size: 5em;
+    font-size: 4vw;
+    /*percentage of viewport width to scale text with window
+    https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container*/
 }
 
-.textimage p{
+#head2 {
+  color: black;
+  top: 22em;
+  font-size: 3vw;
+}
+
+#head3 {
+  color: black;
+  top: 22em;
+  left: 63%;
+  font-size: 3vw;
+}
+
+.textimage p {
   position: absolute;
-  top: 42%;
+  top: 30vw;
   left: 8%;
   color: white;
-  text-align: center;
+}
+
+.textimage .button {
+  width: 100%;
+  padding: 1em 5em;
 }
 
 
 
 
-/*
-  COMBINED ELEMENTS -------------------
-*/
-/*colour swatches*/
+/*colour swatches------------------------*/
 .color1  {
   background-color: #E1E8E7;
   color: black;
@@ -296,24 +349,37 @@ ol {
   background-color: #8c8c8c;
 }
 
+
+
+
+/*item listings----------------------------*/
 .item img {
-  min-width: 12em;
-  width: 50%;
+  min-width: 8em;
+  width: 100%;
   padding-bottom: 1em;
   border-bottom: 1px solid #D1D1D1;
+  margin-top: 1.25em;
+}
 
-  margin-bottom: 1em;
+.item p {
+  margin-top: 0;
+}
+
+.fullimg {
   margin-right: 1em;
 }
 
 .fullimg img {
   width: 100%;
-  /*height: 75%;*/
 }
 
 .thumbnail img {
   width: 20%;
 }
+
+
+
+
 
 .colour-name{
   color: black;
@@ -328,17 +394,48 @@ ol {
 }
 
 .shoecaption{
-  font-size: 1.25em;
-  margin-top: 1em;
-  margin-bottom: .5em;
+  font-size: 0.85em;
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-weight: bold;
   font-family: Barlow, Helvetica;
+}
+
+#home-img1 {
+  width: 58%;
+}
+#home-img2 {
+  width: 42%;
 }
 
 #login {
   font-family: Barlow, Helvetica;
   color: #606060;
   font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
 
+#login .fa {
+  font-size: 1.5em;
+}
+
+.rate{
+  color:black;
+  cursor:pointer;
+}
+
+.rate:hover{
+  color:grey;
+}
+  
+.rate-item{
+  float:left;
+  cursor:pointer;
+  margin: 1em .5em 1em .5em;
+  font-size: 1.25em;
+}
+
+.rate-item:hover ~ .rate-item {
+  color: black;
 }

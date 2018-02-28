@@ -8,9 +8,14 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Contrail One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Passion One' rel='stylesheet'>
+  <!--icons for the footer-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--learned how to use them from https://www.w3schools.com/icons/default.asp -->
 </head>
 
 <body>
@@ -19,21 +24,22 @@
     <div class="container">
       <div class="right">
         <p id="login">
-        	<a href="index.html">Login/Signup</a> &nbsp; &nbsp;
-        	<a href="cart.html"><img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></a>
+        	<a href="cart.html">Login/Signup</a> &nbsp; &nbsp;
+        	<a href="cart.html" class="fa fa-shopping-cart"></a>
     	</p>
       </div>
     </div>
 
     <div class="container">
       <div class="left">
-        <a href="index.html"><img alt="shoe 2" src="img/logo.jpg" width="89.3px" height="80px"></a>
+        <a href="index.html"><img alt="logo" src="img/logo.jpg" width="89.3px" height="80px"></a>
       </div>
 
       <nav class="navblock">
         <a href="listing.html" class="button-nav">MEN</a><a href="listing.html" class="button-nav">WOMEN</a><a href="listing.html" class="button-nav">BOYS</a><a href="listing.html" class="button-nav">GIRLS</a>
       </nav>
       <div class="right">
+        <a href="listing.html" class="fa fa-search"></a> &nbsp; &nbsp;
         <input type="text" name="search" placeholder="search">
       </div>
     </div>
@@ -44,35 +50,54 @@
 <div class="container homeimage">
   <img alt="homepage image" src="img/homepage2.jpg">
   <div class="block textimage">
-    <h1>Header</h1>
+    <h1>SPRING<br> MARATHON<br> EVENT</h1>
   </div>
   <div class="block textimage">
-    <p>Introducing the 2018 white shoes.<br>Access to everything here from materials to influences.<p>
+    <p>Introducing the 2018 spring wear.<br> Check out what's trending in the shoe game now!<br>
+    <a href="listing.html"><button type="button" class="button">SHOP NOW</button></a>
+    <a href="listing.html"><button type="button" class="button">LEARN MORE</button></a></p>
   </div>
-  <div class="container homeimage">
-    <img alt="homepage image" src="img/homepage3.jpg">
-  </div>
-  <div class="container homeimage">
-    <img alt="homepage image" src="img/homepage1.jpg">
-  </div>
+</div>
+
+<img id="home-img1" alt="homepage image" src="img/homepage9.jpg"><img id="home-img2" alt="homepage image" src="img/homepage6.jpg">
+<div class="block textimage">
+  <h1 id="head2">WOMEN'S<br> SPRING WEAR</h1>
+</div>
+<div class="block textimage">
+  <h1 id="head3">MEN'S<br> SPRING WEAR</h1>
 </div>
 
 <!-- // end of content area -->
 
   <footer>
   	<div class="container">
-
   		<div class="footerblock">
-  			<p><a class="hyperlink" href="#">Order Status</a></p>
-  			<p><a class="hyperlink" href="#">Returns</a></p>
-  			<p><a class="hyperlink" href="#">Contact</a></p>
+        <p><a class="hyperlink" href="contact.html">Contact</a></p>
+  			<p><a class="hyperlink" href="contact.html">Order Status</a></p>
+  			<p><a class="hyperlink" href="contact.html">Returns</a></p>
   		</div>
 
   		<div class="footerblock">
-  			<p><a class="hyperlink" href="#">About</a></p>
-  			<p><a class="hyperlink" href="#">Careers</a></p>
+  			<p><a class="hyperlink" href="about.html">About</a></p>
+  			<p><a class="hyperlink" href="about.html">Careers</a></p>
+  		</div>
+
+  		<div class="right">
+  			<a href="#" class="fa fa-twitter"></a> &nbsp; &nbsp;
+  			<a href="#" class="fa fa-facebook"></a> &nbsp; &nbsp;
+  			<a href="#" class="fa fa-instagram"></a>
   		</div>
   	</div>
+
+    <div class="content">
+      <div class="left">
+        <p>By Kelvin Lam and Harry Wong 2018.</p>
+      </div>
+      <div class="right">
+        <a class="hyperlink" href="styleguide.html">Styleguide</a> &nbsp; &nbsp;
+        <a class="hyperlink" href="citations.html">Citations</a>
+      </div>
+    </div>
   </footer>
 
 </body>

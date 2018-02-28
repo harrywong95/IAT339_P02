@@ -8,32 +8,38 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Contrail One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Passion One' rel='stylesheet'>
+  <!--icons for the footer-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--learned how to use them from https://www.w3schools.com/icons/default.asp -->
 </head>
 
-<body>
+<body class="flexheight">
 
   <header>
     <div class="container">
       <div class="right">
         <p id="login">
-        	<a href="index.html">Login/Signup</a> &nbsp; &nbsp;
-        	<a href="cart.html"><img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></a>
+        	<a href="cart.html">Login/Signup</a> &nbsp; &nbsp;
+        	<a href="cart.html" class="fa fa-shopping-cart"></a>
     	</p>
       </div>
     </div>
 
     <div class="container">
       <div class="left">
-        <a href="index.html"><img alt="shoe 2" src="img/logo.jpg" width="89.3px" height="80px"></a>
+        <a href="index.html"><img alt="logo" src="img/logo.jpg" width="89.3px" height="80px"></a>
       </div>
 
       <nav class="navblock">
         <a href="listing.html" class="button-nav">MEN</a><a href="listing.html" class="button-nav">WOMEN</a><a href="listing.html" class="button-nav">BOYS</a><a href="listing.html" class="button-nav">GIRLS</a>
       </nav>
       <div class="right">
+        <a href="listing.html" class="fa fa-search"></a> &nbsp; &nbsp;
         <input type="text" name="search" placeholder="search">
       </div>
     </div>
@@ -42,48 +48,54 @@
 <!-- content area -->
 
 <div class="content">
+  <div class="block2">
+    <p><a href="about.html">About Us</a></p>
+    <p><a href="contact.html">Contact</a></p>
+    <p><a href="styleguide.html">Style Guide</a></p>
+    <p><a href="citations.html">Citations</a></p>
+  </div>
 
+  <div class="block3">
   <h2> About Us </h2>
-  <div>
-    <p>Founded in 2018, Cop City an online retail store that features over 50 brands of sneakers up for sale. We are based in Vancouver but collect stock from international makers in Europe and Asia. We focus on providing customers with a wide range of sneaker collection from brands such as Nike to Adidas. Furthermore, we have a large stock in men, women, boys, and girls ensuring everyone has shoes to wear.<br><br>
-One of the things we most value is being there for our customers. Therefore throughout our website, we have a rating systems and a contact information page to ensure every customer has authority over their purchase. In addition, we’ve partnered with the best shipping company to guarantee your packages arrived safely.<br><br>
-We hope that your experience at Cop City was a desired one, and we wish to see you back soon.
+  
+    <p>Founded in 2018, Cop City an online retail store that features over 50 brands of sneakers up for sale. We are based in Vancouver but collect stock from international makers in Europe and Asia. We focus on providing customers with a wide range of sneaker collection from brands such as Nike to Adidas. Furthermore, we have a large stock in men, women, boys, and girls ensuring everyone has shoes to wear.</p>
+    <p>One of the things we most value is being there for our customers. Therefore throughout our website, we have a rating systems and a contact information page to ensure every customer has authority over their purchase. In addition, we’ve partnered with the best shipping company to guarantee your packages arrived safely.</p>
+    <p>We hope that your experience at Cop City was a desired one, and we wish to see you back soon.</p>
 
   </p>
   </div>
 </div>
-
-<p>
-  <a href="about.html">About Us</a>
-</p>
-<p>
-  <a href="contact.html">Contact</a>
-</p>
-<p>
-  <a href="styleguide.html">Style Guide</a>
-</p>
-<p>
-  <a href="citations.html">Citations</a>
-</p>
-
-
-
 <!-- // end of content area -->
 
   <footer>
-  	<div class="container">
+    <div class="container">
+      <div class="footerblock">
+        <p><a class="hyperlink" href="contact.html">Contact</a></p>
+        <p><a class="hyperlink" href="contact.html">Order Status</a></p>
+        <p><a class="hyperlink" href="contact.html">Returns</a></p>
+      </div>
 
-  		<div class="footerblock">
-  			<p><a class="hyperlink" href="#">Order Status</a></p>
-  			<p><a class="hyperlink" href="#">Returns</a></p>
-  			<p><a class="hyperlink" href="#">Contact</a></p>
-  		</div>
+      <div class="footerblock">
+        <p><a class="hyperlink" href="about.html">About</a></p>
+        <p><a class="hyperlink" href="about.html">Careers</a></p>
+      </div>
 
-  		<div class="footerblock">
-  			<p><a class="hyperlink" href="#">About</a></p>
-  			<p><a class="hyperlink" href="#">Careers</a></p>
-  		</div>
-  	</div>
+      <div class="right">
+        <a href="#" class="fa fa-twitter"></a> &nbsp; &nbsp;
+        <a href="#" class="fa fa-facebook"></a> &nbsp; &nbsp;
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="left">
+        <p>By Kelvin Lam and Harry Wong 2018.</p>
+      </div>
+      <div class="right">
+        <a class="hyperlink" href="styleguide.html">Styleguide</a> &nbsp; &nbsp;
+        <a class="hyperlink" href="citations.html">Citations</a>
+      </div>
+    </div>
   </footer>
 
 </body>

@@ -1,40 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Cart</title>
+  <title>Home</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Contrail One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Passion One' rel='stylesheet'>
+  <!--icons for the footer-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--learned how to use them from https://www.w3schools.com/icons/default.asp -->
 </head>
 
-<body>
+<body class="flexheight">
 
- <header>
+  <header>
     <div class="container">
       <div class="right">
         <p id="login">
-          <a href="index.html">Login/Signup</a> &nbsp; &nbsp;
-          <a href="cart.html"><img class"button-nav" src="img/cart.jpg" alt="shopping cart" width="20px" height="20px"></a>
-      </p>
+        	<a href="cart.html">Login/Signup</a> &nbsp; &nbsp;
+        	<a href="cart.html" class="fa fa-shopping-cart"></a>
+    	</p>
       </div>
     </div>
 
     <div class="container">
       <div class="left">
-        <a href="index.html"><img alt="shoe 2" src="img/logo.jpg" width="89.3px" height="80px"></a>
+        <a href="index.html"><img alt="logo" src="img/logo.jpg" width="89.3px" height="80px"></a>
       </div>
 
       <nav class="navblock">
         <a href="listing.html" class="button-nav">MEN</a><a href="listing.html" class="button-nav">WOMEN</a><a href="listing.html" class="button-nav">BOYS</a><a href="listing.html" class="button-nav">GIRLS</a>
       </nav>
       <div class="right">
+        <a href="listing.html" class="fa fa-search"></a> &nbsp; &nbsp;
         <input type="text" name="search" placeholder="search">
       </div>
     </div>
@@ -50,10 +55,10 @@
     </div>
 
 <!-- summary column -->
-    <div class="item shaded">
+    <div class="block shaded">
       <h2>Summary</h2>
       <div class="container">
-        <div class="item">
+        <div class="block">
           <p>SUBTOTAL</p>
         </div>
         <div class="right">
@@ -62,7 +67,7 @@
       </div>
 
       <div class="container">
-        <div class="item">
+        <div class="block">
            <p>SHIPPING & HANDLING</p>
         </div>
         <div class="right">
@@ -71,7 +76,7 @@
       </div>
 
       <div class="container">
-        <div class="item">
+        <div class="block">
            <h4>TOTAL</h4>
         </div>
         <div class="right">
@@ -80,7 +85,7 @@
       </div>
       <div class="block">
         <a href="checkout.html">
-          <button type="button" class="button">CHECKOUT</button>
+          <button type="button" class="button cart">CHECKOUT</button>
         </a>
       </div>
     </div>
@@ -90,18 +95,34 @@
 <!-- // end of content area -->
 
   <footer>
-  	<div class="container">
-  		<div class="footerblock">
-  			<p><a class="hyperlink" href="#">Order Status</a></p>
-  			<p><a class="hyperlink" href="#">Returns</a></p>
-  			<p><a class="hyperlink" href="#">Contact</a></p>
-  		</div>
+    <div class="container">
+      <div class="footerblock">
+        <p><a class="hyperlink" href="contact.html">Contact</a></p>
+        <p><a class="hyperlink" href="contact.html">Order Status</a></p>
+        <p><a class="hyperlink" href="contact.html">Returns</a></p>
+      </div>
 
-  		<div class="footerblock">
-  			<p><a class="hyperlink" href="#">About</a></p>
-  			<p><a class="hyperlink" href="#">Careers</a></p>
-  		</div>
-  	</div>
+      <div class="footerblock">
+        <p><a class="hyperlink" href="about.html">About</a></p>
+        <p><a class="hyperlink" href="about.html">Careers</a></p>
+      </div>
+
+      <div class="right">
+        <a href="#" class="fa fa-twitter"></a> &nbsp; &nbsp;
+        <a href="#" class="fa fa-facebook"></a> &nbsp; &nbsp;
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="left">
+        <p>By Kelvin Lam and Harry Wong 2018.</p>
+      </div>
+      <div class="right">
+        <a class="hyperlink" href="styleguide.html">Styleguide</a> &nbsp; &nbsp;
+        <a class="hyperlink" href="citations.html">Citations</a>
+      </div>
+    </div>
   </footer>
 
 </body>
