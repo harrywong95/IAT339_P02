@@ -1,14 +1,29 @@
 body {
   font-family: Lato, sans-serif;
-  margin: 1%;
-  padding: 1%;
+  margin: 0;
+}
+
+.flexheight {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  padding: 0 2%;
+  border-bottom: #EEEEEE solid 1px;
+  padding-bottom: 1.75em;
 }
 
 p {
   font-family: Barlow, Helvetica;
   color: #606060;
+  font-size: 0.8em;
 }
 
+
+
+/*links ------------------------------*/
 a {
   text-decoration: none;
   color: black;
@@ -23,6 +38,9 @@ nav a {
   padding: 1em;
   font-size: 1.1em;
 }
+
+
+
 
 code {
   display: block;
@@ -46,6 +64,13 @@ section:not([id]) {
   padding: 2rem;
 }
 
+
+
+.shaded {
+  padding: 1em;
+  background-color: #f2f2f2;
+}
+
 section .shaded {
   background-color: #f2f2f2;
 }
@@ -54,18 +79,49 @@ section .shaded {
   text-align: center;
 }
 
-/*
-  INTERACTIVE ELEMENTS -------------------
-*/
+footer {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background-color: #1a1a1a;
+}
 
-/* Styling for the navigation button */
+footer a {
+  color: white;
+}
+
+footer .container {
+  width: 80%;
+  padding-left: 20%;
+}
+
+footer .content {
+  margin-bottom: 0;
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #606060;
+}
+
+footer .content a {
+  color: #606060;
+  font-size: 0.8em;
+}
+
+footer .content a:hover {
+  color: white;
+}
+
+
+
+/* Styling for the navigation/buttons -------------*/
 .button-nav {
   display: inline-block;
   padding: 1em 2em;
   margin: 0;
+  margin-top: 0.9em;
   background-color: white;
   text-decoration: none;
-  font-family: Contrail One;
+  font-family: Passion One;
+  font-size: 1.2em;
 }
 
 .button-nav:hover, .button-nav:focus {
@@ -77,11 +133,12 @@ section .shaded {
 .button {
   background: #44565B;
   border: none;
-  padding: 1em 2em;
+  padding: 1em;
   color: white;
   border-radius: .25em;
-  margin: 1em;
-  font-family: Contrail One;
+  margin-top: 2em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
@@ -95,13 +152,14 @@ section .shaded {
 .button-reset {
   background: #CCC;
   border: none;
-  padding: 1em 2em;
+  padding: 1em 5em;
   color: black;
+  margin-top: 1em;
   border-radius: .25em;
-  margin: 1em;
-  font-family: Contrail One;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 
 .button-reset:hover, .button-reset:focus {
@@ -109,27 +167,39 @@ section .shaded {
   background-color: #555;
 }
 
-/*text input box*/
+.checkout {
+  padding: 1em 5em;
+}
 
-form {
-  padding: 1em;
+/*text input box--------------------------------------*/
+form input {
+  width: 100%
 }
 
 #input-form {
   background-color: #f2f2f2;
-  width: 50%;
+  width: 100%;
   min-width: 12em;
+  padding: 1em;
 }
 
 input[type=text], select {
-    width: 100%;
     padding: 0.8em 1.2em;
     margin: 0.5em 0;
     box-sizing: border-box;
 }
 
+.right input {
+  margin-top: 1.5em;
+}
+
+
+
+
+
+
 /*
-  TEXT ELEMENTS -------------------
+  TEXT ELEMENTS ---------------------------------
 */
 h1 {
   font-size: 2em;
@@ -150,26 +220,15 @@ h3 {
   font-weight: normal;
 }
 
+h4 {
+  margin-top: 0.9em;
+}
+
 .head1 {
-  font-size: 2em;
-  color: #44565B;
-  font-family: Contrail One;
+  font-size: 4em;
+  font-family: Passion One;
   letter-spacing: normal;
-  margin-bottom: 0.6em;
-}
-
-.head2 {
-  font-size: 1.5em;
-  color: #44565B;
-  font-family: Contrail One;
-  letter-spacing: normal;
-}
-
-.head3 {
-  font-size: 1.1em;
-  color: #44565B;
-  font-family: Contrail One;
-  letter-spacing: normal;
+  margin-bottom: 0.4em;
 }
 
 ul {
@@ -184,39 +243,89 @@ ol {
   color: #44565B;
 }
 
+.homeimage img{
+  width: 100%;
+  height: 100%;
+}
 
-/*
-  COMBINED ELEMENTS -------------------
-*/
-/*colour swatches*/
+
+.textimage h1{
+    position: absolute;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+    top: 15rem;
+    left: 8%;
+    color: white;
+    font-family: Passion One, Helvetica;
+    font-size: 5em;
+    font-size: 4vw;
+    /*percentage of viewport width to scale text with window
+    https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container*/
+}
+
+#head2 {
+  color: black;
+  top: 22em;
+  font-size: 3vw;
+}
+
+#head3 {
+  color: black;
+  top: 22em;
+  left: 63%;
+  font-size: 3vw;
+}
+
+.textimage p {
+  position: absolute;
+  top: 30vw;
+  left: 8%;
+  color: white;
+}
+
+.textimage .button {
+  width: 100%;
+  padding: 1em 4em;
+  background-color: white;
+  color: black;
+}
+
+.button:hover, .button:focus {
+  background-color: #44565B;
+  color: white;
+}
+
+
+/*colour swatches------------------------*/
 .color1  {
   background-color: #E1E8E7;
-  color: black;
 }
 
 .color2  {
   background-color: #BDD0CB;
-  color: black;
 }
 
 .color3  {
   background-color: #89A3A0;
-  color: black;
 }
 
 .color4  {
   background-color: #5B7777;
-  color: black;
 }
 
 .color5  {
   background-color: #44565B;
-  color: black;
 }
 
 .color6  {
   background-color: #D1D1D1;
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6 {
   color: black;
+  font-size: 1.2em;
+  padding: 1em;
+  margin-bottom: 0.5em;
 }
 
 .col1 {
@@ -235,14 +344,43 @@ ol {
   background-color: #8c8c8c;
 }
 
+.col1, .col2, .col3, .col4 {
+  font-size: 1.2em;
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+
+
+/*item listings----------------------------*/
 .item img {
-  min-width: 12em;
-  width: 50%;
+  min-width: 8em;
+  width: 100%;
   padding-bottom: 1em;
   border-bottom: 1px solid #D1D1D1;
-  margin-bottom: 1em;
-  margin-right: 1em;
+  margin-top: 1.25em;
 }
+
+.item p {
+  margin-top: 0;
+}
+
+.fullimg {
+  margin-right: 1em;
+  height: 110%;
+}
+
+.fullimg img {
+  width: 100%;
+}
+
+.thumbnail img {
+  width: 20%;
+}
+
+
+
+
 
 .colour-name{
   color: black;
@@ -257,9 +395,48 @@ ol {
 }
 
 .shoecaption{
-  font-size: 1.25em;
-  margin-top: 1em;
-  margin-bottom: .5em;
+  font-size: 0.85em;
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: bold;
   font-family: Barlow, Helvetica;
+}
+
+#home-img1 {
+  width: 58%;
+}
+#home-img2 {
+  width: 42%;
+}
+
+#login {
+  font-family: Barlow, Helvetica;
+  color: #606060;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+#login .fa {
+  font-size: 1.5em;
+}
+
+.rate{
+  color:black;
+  cursor:pointer;
+}
+
+.rate:hover{
+  color:grey;
+}
+
+.rate-item{
+  float:left;
+  cursor:pointer;
+  margin: 1em .5em 1em .5em;
+  font-size: 1.25em;
+}
+
+.rate-item:hover ~ .rate-item {
+  color: black;
 }
